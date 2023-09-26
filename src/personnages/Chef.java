@@ -5,6 +5,7 @@ public class Chef {
 	private int  effetPotionMin;
 	private int effetPotionMax;
 	private Village village;
+	private int force;
 	
 	public Chef(String nom, int effetPotionMin, int effetPotionMax, Village village) {
 		this.nom = nom;

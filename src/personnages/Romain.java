@@ -28,4 +28,11 @@ public class Romain {
 			parler("j'abondonne ...");
 		}
 	}
+	public static void main(String[] args) { 
+		Romain Minus= new Romain("Minus", 6);
+		System.out.println(Minus.prendreParole() + " je Suis Minus , le Romain !" );
+		Minus.parler("UN GAU... UN GAUGAU...");
+		Gaulois asterix = new Gaulois("Asterix",8);
+		Minus.recevoirCoup(asterix.getForce() /3);
+}
 }
