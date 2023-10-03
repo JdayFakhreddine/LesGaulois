@@ -2,15 +2,13 @@ package personnages;
 
 public class Chef {
 	private String nom;
-	private int  effetPotionMin;
-	private int effetPotionMax;
+	private int  effetPotion =1 ;
 	private Village village;
 	private int force;
 	
-	public Chef(String nom, int effetPotionMin, int effetPotionMax, Village village) {
+	public Chef(String nom, int force , Village village) {
 		this.nom = nom;
-		this.effetPotionMin = effetPotionMin;
-		this.effetPotionMax = effetPotionMax;
+		this.force= force;
 		this.village= village;
 	}
 
@@ -23,7 +21,6 @@ public class Chef {
 	}
 
 	private String prendreParole() {
-		// TODO Auto-generated method stub
 		return " le chef " + nom + " du village " + village.getNom()+ ": ";
 	}
 	public void frapper(Romain romain) {

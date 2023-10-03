@@ -3,6 +3,10 @@ package personnages;
 public class Romain {
 	private String nom;
 	private int force ;
+	private Equipement[] equipements = new Equipement[2];
+	private int nbequipement = 0;
+	
+	
 	public Romain(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
